@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+* {
+  box-sizing: border-box !important;
+  font-family: "Cabin", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 12px 12px 10px 12px;
+    background:#C4C4C4;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #F8BD7A;
+    min-height: 200px;
+    border-radius: 12px 12px 10px 12px;
+  }
+}
